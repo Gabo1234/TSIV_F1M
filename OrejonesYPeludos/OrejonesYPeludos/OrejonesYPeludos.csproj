@@ -65,9 +65,19 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="CSS\EstiloInicio.css" />
+    <Content Include="Default.aspx" />
     <Content Include="packages.config" />
+    <Content Include="Rsc\background.jpg" />
+    <Content Include="Rsc\Brand.jpg" />
+    <Content Include="Rsc\Brand2.png" />
+    <Content Include="Rsc\ConejoAzul.jpg" />
+    <Content Include="Rsc\ConejoBeige.png" />
+    <Content Include="Rsc\ConejoMarrón.jpg" />
+    <Content Include="Rsc\Liebre.png" />
     <Content Include="Scripts\jquery-3.2.1.slim.min.map" />
     <Content Include="Scripts\jquery-3.2.1.min.map" />
+    <Content Include="Plantilla.Master" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -77,8 +87,8 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Consulta_éxito.aspx" />
-    <Content Include="Default.aspx" />
-    <Content Include="EstiloForm.css" />
+    <Content Include="Formulario.aspx" />
+    <Content Include="CSS\EstiloForm.css" />
     <Content Include="Global.asax" />
     <Content Include="Rsc\Confirmación.jpg" />
     <Content Include="Rsc\Icon.png" />
@@ -97,6 +107,16 @@
     <Compile Include="Consulta_éxito.aspx.designer.cs">
       <DependentUpon>Consulta_éxito.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Formulario.aspx.cs">
+      <DependentUpon>Formulario.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Formulario.aspx.designer.cs">
+      <DependentUpon>Formulario.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
     <Compile Include="Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -104,8 +124,12 @@
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Global.asax.cs">
-      <DependentUpon>Global.asax</DependentUpon>
+    <Compile Include="Plantilla.Master.cs">
+      <DependentUpon>Plantilla.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Plantilla.Master.designer.cs">
+      <DependentUpon>Plantilla.Master</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
