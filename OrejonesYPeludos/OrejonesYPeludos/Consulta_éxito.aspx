@@ -15,7 +15,7 @@
 
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <link href="EstiloForm.css" rel="stylesheet" />
+    <link href="CSS/EstiloForm.css" rel="stylesheet" />
 </head>
 <body>
     <form id="form1" runat="server">
