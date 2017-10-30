@@ -46,12 +46,5 @@
         </form>
     </div>
 
-    <script type="text/javascript"> 
-        function mostrarPop() {
-            $('TextBox1').popover('show');
-        }
-
-
-    </script>
 </body>
 </html>
