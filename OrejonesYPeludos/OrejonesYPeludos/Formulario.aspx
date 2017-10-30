@@ -7,17 +7,18 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>Orejones y Peludos</title>
     <link rel="icon" href="Rsc/Icon.png"/>
+    
+    
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
 
     <!-- Optional theme -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" />
-
+    <script src="Scripts/jquery-3.2.1.min.js"></script>
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
-    <script src="Scripts/jquery-3.2.1.min.js"></script>
-    <link href="EstiloForm.css" rel="stylesheet" />
+    <link href="CSS/EstiloForm.css" rel="stylesheet" />
 </head>
 <body>
     <div class="col-md-2"> </div>

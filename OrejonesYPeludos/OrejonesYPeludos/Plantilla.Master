@@ -12,12 +12,11 @@
 
     <!-- Optional theme -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" />
-
+    <script src="Scripts/jquery-3.2.1.min.js"></script>
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
     <link href="CSS/EstiloInicio.css" rel="stylesheet" />
-
     <!-- Material Importado -->
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 
@@ -28,27 +27,22 @@
     <nav class="navbar navbar-inverse navbar-fixed-top">
         <div class="container">
             <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
                 <a class="navbar-brand" href="Default.aspx">
-                    <img src="Rsc/Brand2.png" width="35" height="35" class="img-rounded"/></a>
+                    <img src="Rsc/Brand2.png" width="35" height="35" class="img-rounded" />
+                </a>
             </div>
-            <div id="navbar" class="navbar-collapse collapse">
-                <form class="navbar-form navbar-right">
-                    <div class="form-group">
-                        <input type="text" placeholder="Correo Electrónico" class="form-control">
-                    </div>
-                    <div class="form-group">
-                        <input type="password" placeholder="Contraseña" class="form-control">
-                    </div>
-                    <button type="submit" class="btn btn-success">Loguearme</button>
-                </form>
-            </div>
-            <!--/.navbar-collapse -->
+            <ul class="nav navbar-nav">
+                <li id="primerItem" class="active"><a href="Default.aspx">Inicio</a></li>
+                <li id="segundoItem"><a href="Nosotros.aspx">Sobre Nosotros</a></li>
+
+                <li id="tercerItem" runat="server"><a href="Catalogo.aspx">Catálogo</a></li>
+                <li id="cuartoItem"><a href="Contactenos.aspx">Contáctenos</a></li>
+            </ul>
+
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#"><span class="glyphicon glyphicon-user"></span> Registrarme</a></li>
+                <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Loguearme</a></li>
+            </ul>
         </div>
     </nav>
 
@@ -58,10 +52,33 @@
             </asp:ContentPlaceHolder>
         </div>
     </form>
+
     <footer class="footer">
         <div class="container col-xs-12">
             <p>Orejones y Peludos &copy; 2017</p>
         </div>
     </footer>
+
+    <script>
+        $(document).ready(function () {
+
+            if (document.location.toString().endsWith("Default.aspx")) {
+                $("li").removeClass("active");
+                $("#primerItem").addClass("active");
+            }
+            if (document.location.toString().endsWith("Nosotros.aspx")) {
+                $("li").removeClass("active");
+                $("#segundoItem").addClass("active");
+            }
+            if (document.location.toString().endsWith("Catalogo.aspx")) {
+                $("li").removeClass("active");
+                $("#tercerItem").addClass("active");
+            }
+            if (document.location.toString().endsWith("Contactenos.aspx")) {
+                $("li").removeClass("active");
+                $("#cuartoItem").addClass("active");
+            }
+        });
+    </script>
 </body>
 </html>
