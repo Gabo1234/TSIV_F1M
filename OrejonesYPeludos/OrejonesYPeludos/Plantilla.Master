@@ -39,11 +39,12 @@
                 <li id="cuartoItem"><a href="Contactenos.aspx">Contáctenos</a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
-                <li><a href="#"><span class="glyphicon glyphicon-user"></span> Registrarme</a></li>
-                <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Loguearme</a></li>
+                <li><a href="#"><span class="glyphicon glyphicon-user"></span>Registrarme</a></li>
+                <li><a href="#"><span class="glyphicon glyphicon-log-in"></span>Loguearme</a></li>
             </ul>
-
+            
         </div>
+
     </nav>
 
     <form id="form1" runat="server">
