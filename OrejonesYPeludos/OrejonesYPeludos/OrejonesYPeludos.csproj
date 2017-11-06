@@ -68,6 +68,7 @@
     <Content Include="Catalogo.aspx" />
     <Content Include="Contactenos.aspx" />
     <Content Include="CSS\EstiloInicio.css" />
+    <Content Include="CSS\EstiloNosotros.css" />
     <Content Include="Default.aspx" />
     <Content Include="Nosotros.aspx" />
     <Content Include="packages.config" />
