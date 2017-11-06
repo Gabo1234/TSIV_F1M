@@ -74,10 +74,14 @@
     <Content Include="Rsc\background.jpg" />
     <Content Include="Rsc\Brand.jpg" />
     <Content Include="Rsc\Brand2.png" />
+    <Content Include="Rsc\Conejo-brony.png" />
+    <Content Include="Rsc\conejo-hipster.png" />
+    <Content Include="Rsc\Conejo-simple.png" />
     <Content Include="Rsc\ConejoAzul.jpg" />
     <Content Include="Rsc\ConejoBeige.png" />
     <Content Include="Rsc\ConejoMarrón.jpg" />
     <Content Include="Rsc\Liebre.png" />
+    <Content Include="Rsc\Marshmallow.png" />
     <Content Include="Scripts\jquery-3.2.1.slim.min.map" />
     <Content Include="Scripts\jquery-3.2.1.min.map" />
     <Content Include="Plantilla.Master" />

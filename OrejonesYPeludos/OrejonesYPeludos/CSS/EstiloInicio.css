@@ -3,10 +3,11 @@
     background-attachment: fixed;
     background-size: cover;
     background-position: center center;
+    
 }
 
 .footer {
-    position:absolute;
+    position:fixed;
     bottom: 0;
     width: 100%;
     color: whitesmoke;
@@ -18,10 +19,32 @@
 }
 
 #contenido {
-    margin-top:80px;
+    margin-top: 80px;
 }
 
 .navbar-brand {
     padding: 10px 10px;
 }
 
+#columna-derecha, #columna-izquierda {
+    text-align: center;
+    padding: 0 20px;
+    margin-bottom: 80px;
+    padding-bottom: 20px;
+
+}
+
+    #columna-derecha img, #columna-izquierda img {
+        margin-bottom:15px;
+        margin-top: 10px;
+    }
+
+
+    #columna-derecha img, #columna-izquierda img {
+        margin-bottom: 15px;
+        margin-top: 10px;
+    }
+
+#inicio-principal {
+    text-align: center;
+}
