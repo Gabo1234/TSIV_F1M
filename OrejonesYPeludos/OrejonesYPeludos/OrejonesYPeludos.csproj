@@ -65,12 +65,17 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_Data\Conejos.xml" />
+    <Content Include="App_Data\Publicidad.xml" />
     <Content Include="Catalogo.aspx" />
     <Content Include="Contactenos.aspx" />
+    <Content Include="CSS\EstiloCatalogo.css" />
     <Content Include="CSS\EstiloInicio.css" />
     <Content Include="CSS\EstiloNosotros.css" />
     <Content Include="Default.aspx" />
+    <Content Include="Descripción_conejo.aspx" />
     <Content Include="Nosotros.aspx" />
+    <Content Include="Ofertas_conejo.aspx" />
     <Content Include="packages.config" />
     <Content Include="Rsc\background.jpg" />
     <Content Include="Rsc\Brand.jpg" />
@@ -83,6 +88,15 @@
     <Content Include="Rsc\ConejoMarrón.jpg" />
     <Content Include="Rsc\Liebre.png" />
     <Content Include="Rsc\Marshmallow.png" />
+    <Content Include="Rsc\RealBunny\Angora.jpg" />
+    <Content Include="Rsc\RealBunny\Blanco.png" />
+    <Content Include="Rsc\RealBunny\Enanoholandes.jpg" />
+    <Content Include="Rsc\RealBunny\Holandes.jpg" />
+    <Content Include="Rsc\RealBunny\Lanosojersey.jpg" />
+    <Content Include="Rsc\RealBunny\Lionhead.jpg" />
+    <Content Include="Rsc\RealBunny\Lopholandes.jpg" />
+    <Content Include="Rsc\RealBunny\Lopingles.jpg" />
+    <Content Include="Rsc\RealBunny\Minirex.jpg" />
     <Content Include="Scripts\jquery-3.2.1.slim.min.map" />
     <Content Include="Scripts\jquery-3.2.1.min.map" />
     <Content Include="Plantilla.Master" />
@@ -132,6 +146,13 @@
     <Compile Include="Contactenos.aspx.designer.cs">
       <DependentUpon>Contactenos.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Descripción_conejo.aspx.cs">
+      <DependentUpon>Descripción_conejo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Descripción_conejo.aspx.designer.cs">
+      <DependentUpon>Descripción_conejo.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Formulario.aspx.cs">
       <DependentUpon>Formulario.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -156,6 +177,13 @@
     <Compile Include="Nosotros.aspx.designer.cs">
       <DependentUpon>Nosotros.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Ofertas_conejo.aspx.cs">
+      <DependentUpon>Ofertas_conejo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Ofertas_conejo.aspx.designer.cs">
+      <DependentUpon>Ofertas_conejo.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Plantilla.Master.cs">
       <DependentUpon>Plantilla.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -166,7 +194,6 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="App_Data\" />
     <Folder Include="Models\" />
   </ItemGroup>
   <PropertyGroup>
