@@ -48,8 +48,8 @@
 
 
                 <ul class="nav navbar-nav navbar-right">
-                    <<li><a href="#"><span class="glyphicon glyphicon-user"></span> Registrarme</a></li>
-                    <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Loguearme</a></li>
+                    <<li><a id="registro" href="#"><span class="glyphicon glyphicon-user"></span> Registrarme</a></li>
+                    <li><a id="login" href="#"><span class="glyphicon glyphicon-log-in"></span> Loguearme</a></li>
                 </ul>
             </div>
         </div>
@@ -89,5 +89,10 @@
             }
         });
     </script>
+
+
+
+
+
 </body>
 </html>

@@ -26,7 +26,7 @@
             <img class="center-block img-thumbnail img-responsive" src="Rsc/Confirmación.jpg" height="400" width="400" />
             <br />
             <div class="text-center">
-                <asp:Button class="btn btn-success btn-lg" ID="Button1" runat="server" Text="Regresar a consultas" OnClick="Button1_Click" />
+                <asp:Button class="btn btn-success btn-lg" ID="Button1" runat="server" Text="Regresar a orejones y peludos" OnClick="Button1_Click" />
             </div>
         </div>
     </form>

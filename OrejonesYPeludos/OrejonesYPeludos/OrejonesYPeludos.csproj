@@ -67,11 +67,13 @@
   <ItemGroup>
     <Content Include="App_Data\Conejos.xml" />
     <Content Include="App_Data\Publicidad.xml" />
+    <Content Include="asdasd.aspx" />
     <Content Include="Catalogo.aspx" />
     <Content Include="Contactenos.aspx" />
     <Content Include="CSS\EstiloCatalogo.css" />
     <Content Include="CSS\EstiloInicio.css" />
     <Content Include="CSS\EstiloNosotros.css" />
+    <Content Include="CSS\Prueba.css" />
     <Content Include="Default.aspx" />
     <Content Include="Descripción_conejo.aspx" />
     <Content Include="Nosotros.aspx" />
@@ -88,6 +90,8 @@
     <Content Include="Rsc\ConejoMarrón.jpg" />
     <Content Include="Rsc\Liebre.png" />
     <Content Include="Rsc\Marshmallow.png" />
+    <Content Include="Rsc\mision.png" />
+    <Content Include="Rsc\propuesta.png" />
     <Content Include="Rsc\RealBunny\Angora.jpg" />
     <Content Include="Rsc\RealBunny\Blanco.png" />
     <Content Include="Rsc\RealBunny\Enanoholandes.jpg" />
@@ -97,6 +101,7 @@
     <Content Include="Rsc\RealBunny\Lopholandes.jpg" />
     <Content Include="Rsc\RealBunny\Lopingles.jpg" />
     <Content Include="Rsc\RealBunny\Minirex.jpg" />
+    <Content Include="Rsc\vision.png" />
     <Content Include="Scripts\jquery-3.2.1.slim.min.map" />
     <Content Include="Scripts\jquery-3.2.1.min.map" />
     <Content Include="Plantilla.Master" />
@@ -112,7 +117,6 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Consulta_éxito.aspx" />
-    <Content Include="Formulario.aspx" />
     <Content Include="CSS\EstiloForm.css" />
     <Content Include="Global.asax" />
     <Content Include="Rsc\Confirmación.jpg" />
@@ -125,6 +129,13 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="asdasd.aspx.cs">
+      <DependentUpon>asdasd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="asdasd.aspx.designer.cs">
+      <DependentUpon>asdasd.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Catalogo.aspx.cs">
       <DependentUpon>Catalogo.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -152,13 +163,6 @@
     </Compile>
     <Compile Include="Descripción_conejo.aspx.designer.cs">
       <DependentUpon>Descripción_conejo.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Formulario.aspx.cs">
-      <DependentUpon>Formulario.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Formulario.aspx.designer.cs">
-      <DependentUpon>Formulario.aspx</DependentUpon>
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
