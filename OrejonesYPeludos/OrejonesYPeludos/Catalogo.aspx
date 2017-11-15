@@ -22,7 +22,7 @@
                     </div>
                     <div class="back">
                         <img src="Rsc/Brand2.png" />
-                        <h4><%#XPath("Nombre") %></h4>
+                        <h3><%#XPath("Nombre")%></h3>
                     </div>
                 </div>
             </div>

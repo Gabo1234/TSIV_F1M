@@ -14,9 +14,8 @@
     width:100%;
     height:auto;
 }
-.back {
-    padding: 25px;
-}.front, .back, .flip-container {
+
+.front, .back, .flip-container {
     height: 300px !important;
     border-radius: 10px;
 }
@@ -61,16 +60,14 @@ h1 {
 }
 
 /* back, initially hidden pane */
+
 .back {
     transform: rotateY(180deg);
-}
-
-
-.back {
     background-color: #ffc266;
     text-align: center;
     font-family: Arial;
-    color: whitesmoke
+    color: #ce7f25 !important;
+    padding: 25px;
 }
 
 #contenido {
