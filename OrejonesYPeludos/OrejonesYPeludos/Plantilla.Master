@@ -1,4 +1,4 @@
-﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Plantilla.master.cs" Inherits="OrejonesYPeludos.Plantilla" %>
+﻿<%@ Master  Language="C#" AutoEventWireup="true" CodeBehind="Plantilla.master.cs" Inherits="OrejonesYPeludos.Plantilla" %>
 
 <!DOCTYPE html>
 
@@ -24,7 +24,7 @@
     </asp:ContentPlaceHolder>
 </head>
 <body>
-    
+
     <nav class="navbar navbar-inverse">
         <div class="container-fluid">
             <div class="navbar-header">
@@ -48,14 +48,57 @@
 
 
                 <ul class="nav navbar-nav navbar-right">
-                    <<li><a id="registro" href="#"><span class="glyphicon glyphicon-user"></span> Registrarme</a></li>
-                    <li><a id="login" href="#"><span class="glyphicon glyphicon-log-in"></span> Loguearme</a></li>
+                    <<li><a id="registro" href="#" data-toggle="modal" data-target="#Registro"><span class="glyphicon glyphicon-user"></span>Registrarme</a></li>
+                    <li><a id="login" href="#" data-toggle="modal" data-target="#Login"><span class="glyphicon glyphicon-log-in"></span>Loguearme</a></li>
                 </ul>
             </div>
         </div>
     </nav>
 
+
+
     <form id="form1" runat="server">
+        <div class="modal fade" id="Registro" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                        <h4 class="modal-title" id="LabelRegistro">Únase a la familia de orejones y peludos!</h4>
+                    </div>
+                    <div class="modal-body">
+                        <asp:CreateUserWizard ID="CreateUserWizard1" runat="server">
+                            <WizardSteps>
+                                <asp:CreateUserWizardStep ID="CreateUserWizardStep1" runat="server">
+                                </asp:CreateUserWizardStep>
+                                <asp:CompleteWizardStep ID="CompleteWizardStep1" runat="server">
+                                </asp:CompleteWizardStep>
+                            </WizardSteps>
+                        </asp:CreateUserWizard>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="Login" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                        <h4 class="modal-title" id="LabelLogin">Loguearse en orejones y peludos</h4>
+                    </div>
+                    <div class="modal-body">
+                        Texto del modal
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
         <div id="contenido">
             <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
             </asp:ContentPlaceHolder>

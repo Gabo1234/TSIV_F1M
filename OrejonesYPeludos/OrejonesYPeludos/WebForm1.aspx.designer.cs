@@ -10,24 +10,15 @@
 namespace OrejonesYPeludos {
     
     
-    public partial class Descripción_conejo {
+    public partial class WebForm1 {
         
         /// <summary>
-        /// Control FormView1.
+        /// Control form1.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.FormView FormView1;
-        
-        /// <summary>
-        /// Control xmlConejos.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.XmlDataSource xmlConejos;
+        protected global::System.Web.UI.HtmlControls.HtmlForm form1;
     }
 }

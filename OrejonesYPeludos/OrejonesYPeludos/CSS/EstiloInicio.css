@@ -50,4 +50,11 @@
 }
 
 
+.modal-header {
+    padding: 20px;
+}
 
+.modal-title {
+    text-align: center;
+    font-weight: bold;
+}
