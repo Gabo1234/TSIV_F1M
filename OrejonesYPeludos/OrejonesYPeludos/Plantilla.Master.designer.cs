@@ -31,6 +31,15 @@ namespace OrejonesYPeludos {
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
         
         /// <summary>
+        /// Control LoginName1.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.LoginName LoginName1;
+        
+        /// <summary>
         /// Control CreateUserWizard1.
         /// </summary>
         /// <remarks>
@@ -56,6 +65,15 @@ namespace OrejonesYPeludos {
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.CompleteWizardStep CompleteWizardStep1;
+        
+        /// <summary>
+        /// Control Login1.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Login Login1;
         
         /// <summary>
         /// Control ContentPlaceHolder1.

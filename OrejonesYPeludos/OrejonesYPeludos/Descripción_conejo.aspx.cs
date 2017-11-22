@@ -13,5 +13,13 @@ namespace OrejonesYPeludos
         {
 
         }
+
+        protected void sdsPublicaciones_Selected(object sender, SqlDataSourceStatusEventArgs e)
+        {
+            if (e.AffectedRows == 0)
+            {
+                pNodata.Visible = true;
+            }
+        }
     }
 }

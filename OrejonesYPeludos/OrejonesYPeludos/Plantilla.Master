@@ -24,7 +24,7 @@
     </asp:ContentPlaceHolder>
 </head>
 <body>
-
+      <form id="form1" runat="server">
     <nav class="navbar navbar-inverse">
         <div class="container-fluid">
             <div class="navbar-header">
@@ -41,14 +41,17 @@
                 <ul class="nav navbar-nav">
                     <li id="primerItem" class="active"><a href="Default.aspx">Inicio</a></li>
                     <li id="segundoItem"><a href="Nosotros.aspx">Sobre Nosotros</a></li>
-
                     <li id="tercerItem"><a href="Catalogo.aspx">Catálogo</a></li>
                     <li id="cuartoItem"><a href="Contactenos.aspx">Contáctenos</a></li>
                 </ul>
 
 
                 <ul class="nav navbar-nav navbar-right">
-                    <<li><a id="registro" href="#" data-toggle="modal" data-target="#Registro"><span class="glyphicon glyphicon-user"></span>Registrarme</a></li>
+                    <li id="etiqueta">
+                        
+                        <asp:LoginName ID="LoginName1" runat="server" />
+                    </li>
+                    <li><a id="registro" href="#" data-toggle="modal" data-target="#Registro"><span class="glyphicon glyphicon-user"></span>Registrarme</a></li>
                     <li><a id="login" href="#" data-toggle="modal" data-target="#Login"><span class="glyphicon glyphicon-log-in"></span>Loguearme</a></li>
                 </ul>
             </div>
@@ -57,7 +60,7 @@
 
 
 
-    <form id="form1" runat="server">
+  
         <div class="modal fade" id="Registro" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
             <div class="modal-dialog" role="document">
                 <div class="modal-content">
@@ -89,9 +92,10 @@
                             <span aria-hidden="true">&times;</span>
                         </button>
                         <h4 class="modal-title" id="LabelLogin">Loguearse en orejones y peludos</h4>
+                        
                     </div>
                     <div class="modal-body">
-                        Texto del modal
+                        <asp:Login ID="Login1" runat="server"></asp:Login>
                     </div>
                 </div>
             </div>

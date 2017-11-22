@@ -22,12 +22,12 @@ namespace OrejonesYPeludos {
         protected global::System.Web.UI.WebControls.Repeater Repeater1;
         
         /// <summary>
-        /// Control XmlConejos.
+        /// Control sdsConejos.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.XmlDataSource XmlConejos;
+        protected global::System.Web.UI.WebControls.SqlDataSource sdsConejos;
     }
 }

@@ -1,0 +1,23 @@
+﻿h1 {
+    text-align:center;
+}
+
+h3 {
+    border-bottom: 1px lightblue solid;
+}
+
+#elemento {
+    margin-bottom: 85px;
+    margin-top: 25px;
+}
+
+#publicidad{
+
+    margin-bottom:60px;
+}
+
+    #publicidad div {
+        padding-top:20px;
+        padding-bottom:20px;
+        text-align: center;
+    }

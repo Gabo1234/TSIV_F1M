@@ -10,12 +10,12 @@
 
         <asp:Label ID="Label1" runat="server" Text="Label">Correo Electrónico</asp:Label>
         <br />
-        <asp:TextBox class="form-control" ID="TextBox1" runat="server" TextMode="Email"></asp:TextBox>
+        <asp:TextBox class="form-control" ID="TextBox1" runat="server" TextMode="Email" ></asp:TextBox>
         <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ErrorMessage="Se necesita este campo para continuar" ControlToValidate="TextBox1" CssClass="error"></asp:RequiredFieldValidator>
         <br />
         <asp:Label ID="Label2" runat="server" Text="Label">Asunto</asp:Label>
         <br />
-        <asp:DropDownList class="form-control" ID="DropDownList1" runat="server" OnSelectedIndexChanged="DropDownList1_SelectedIndexChanged">
+        <asp:DropDownList class="form-control" ID="DropDownList1" runat="server" >
             <asp:ListItem>Usuarios</asp:ListItem>
             <asp:ListItem>Fallas Técnicas</asp:ListItem>
             <asp:ListItem>Sugerencias</asp:ListItem>
