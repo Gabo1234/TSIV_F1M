@@ -1,4 +1,8 @@
-﻿body {
+﻿.modal-body table {
+    margin: 0 auto;
+}
+
+body {
     background-image: url("https://i.pinimg.com/originals/54/77/4f/54774f4bc8287c7337fadd5fbb419da6.jpg");
     background-attachment: fixed;
     background-size: cover;
@@ -67,3 +71,4 @@
     padding-top: 15px;
     padding-right: 10px;
 }
+

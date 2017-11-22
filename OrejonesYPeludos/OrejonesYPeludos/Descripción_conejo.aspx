@@ -32,7 +32,7 @@
                 <p>No se encontraron comentarios</p>
             </asp:Panel>
 
-            <asp:Repeater ID="Repeater1" runat="server" DataSourceID="sdsPublicaciones" OnItemCommand="Repeater1_ItemCommand">
+            <asp:Repeater ID="Repeater1" runat="server" DataSourceID="sdsPublicaciones">
 
                 <ItemTemplate>
                     <div class="col-xs-12">
@@ -45,9 +45,9 @@
                 </ItemTemplate>
             </asp:Repeater>
 
-            <asp:SqlDataSource runat="server" ID="sdsPublicaciones" ConnectionString='<%$ ConnectionStrings:ConnectionString %>' SelectCommand="SELECT * FROM [Publicacion] WHERE ([Id_conejo] = @Id_conejo) ORDER BY [Id] DESC" OnSelected="sdsPublicaciones_Selected">
+            <asp:SqlDataSource runat="server" ID="sdsPublicaciones" ConnectionString='<%$ ConnectionStrings:ConnectionString %>' SelectCommand="SELECT [Título], [Descripcion], [Precio] FROM [Publicacion] WHERE ([Id_conejo] = @Id_conejo3)" OnSelected="sdsPublicaciones_Selected">
                 <SelectParameters>
-                    <asp:QueryStringParameter QueryStringField="Id_conejo" Name="Id_conejo" Type="Int32"></asp:QueryStringParameter>
+                    <asp:QueryStringParameter QueryStringField="Id_conejo" DefaultValue="1" Name="Id_conejo3" Type="Int32"></asp:QueryStringParameter>
                 </SelectParameters>
             </asp:SqlDataSource>
         </div>
@@ -56,7 +56,8 @@
     <div id="publicidad" class="container col-xs-12 elemento hidden-xs hidden-sm">
         <div class="container jumbotron">
             <h4 class="text-center">Patrocinadores</h4>
-            <asp:AdRotator ID="AdRotator1" runat="server" Width="800" Height="150" />
+            <asp:AdRotator ID="AdRotator1" runat="server" Width="800px" Height="150px" DataSourceID="XmlPublicidad" />
+            <asp:XmlDataSource runat="server" ID="XmlPublicidad" DataFile="~/App_Data/Publicidad.xml"></asp:XmlDataSource>
         </div>
     </div>
 

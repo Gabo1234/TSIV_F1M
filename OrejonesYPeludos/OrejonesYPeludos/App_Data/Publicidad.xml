@@ -1,12 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Advertisements>
   <Ad>
-    <ImageUrl></ImageUrl>
+    <ImageUrl>Rsc/Publicidad/2.png</ImageUrl>
   </Ad>
   <Ad>
-    <ImageUrl></ImageUrl>
+    <ImageUrl>Rsc/Publicidad/Sin_titulo.png</ImageUrl>
   </Ad>
-  <Ad>
-    <ImageUrl></ImageUrl>
-  </Ad>
+
 </Advertisements>
